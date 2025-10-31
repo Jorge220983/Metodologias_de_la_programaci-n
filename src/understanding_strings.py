@@ -53,3 +53,74 @@ last_name = "gonzález"
 full_name = first_name + " " + last_name
 print(full_name)
 print(full_name.title())
+
+# Whitespaces
+
+"""
+   Un whitespace se refiere a cualquier caracter que no
+   se imprime, es decir, un espacio, tabuladores y
+   finales de línea. Los whithespaces se utilizan 
+   comúnmente para organizar las salidas de tal manera 
+   que sea mas amigable de leer o ver para el usuario.
+   
+
+   Ejemplo:
+
+      - Tabulador: \t
+      - Salto de línea \n
+    
+"""
+
+print("whitespace Tabulador")
+print("Python")
+print("\tPython")
+print("\t\tPython")
+
+print("Whitespace Salto de línea")
+print("Languages: \n\tPython\nC\n\tJavascript")
+
+# Eliminación de espacios en blanco
+programming_lenguage = " Python "
+print(programming_lenguage)
+print(programming_lenguage.rstrip())
+print(programming_lenguage.lstrip())
+print(programming_lenguage.strip())
+
+
+# Syntax Error con String
+message = "Una fortaleza de python es su comunidad"
+print(message)
+message = "Una fortaleza de python es su comunidad"
+print(message)
+
+# Concatenacíon
+first_name = "Jorge"
+last_name = "González"
+full_name = first_name + last_name
+print(full_name)
+
+# f-strings
+famous_person = "Hector Gamez" 
+message = f"{famous_person} muchas veces dijo que no se durmio que solo estaba cabeceando a compi"
+print(message)
+print(f"{famous_person.upper()} muchas veces dijo que no se durmio que solo estaba cabeceando a compi")
+
+# Actividad 
+
+"""
+Elige el nombre de una persona famosa (quien tu quieras).
+Elige una cita famosa de esta persona.
+Iguala ambos strings a una variable.
+
+1) Realiza la concatenación utilizando el signo de suma
+2) Realiza la concatenación utilizando fstrings
+
+"""
+famous_person = "Hector Gamez"
+quote = "muchas veces dijo que no se durmio que solo estaba cabeceando a compi"
+famous_message = famous_person+ " "+quote
+print(famous_person+" "+quote)
+print(famous_message)
+
+f_string_message = f"{famous_person} {quote}"
+print(f_string_message)
