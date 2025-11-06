@@ -122,3 +122,27 @@ print("\n")
 motorcycles.sort(reverse=True)
 print(motorcycles) # Salida: ['yamaha', 'susuki', 'honda', 'ducati']
 print("\n")
+
+"""
+   Ejemplo:
+
+"""
+students = ["jesus", "joshue", "andrix", "jen", "miguel", "nahum"]
+print(students)
+desired_student = input("¿Qué estudiante deseas borrar de la lista?:")
+students.remove(desired_student.strip().lower())
+print(students)
+print("Tu has eliminado: ", desired_student)
+students.reverse()
+print(students)
+
+print(len(students))
+
+students.sort()
+print(students)
+
+cars = ["kia", "ford", "tesla", "volvo", "chevrolet"]
+print(cars)
+print(sorted(cars))
+sorted_lists = sorted(cars)
+print("Lista original: ", cars)
