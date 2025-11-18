@@ -58,3 +58,7 @@ else:
     print("Lo siento, eres demasiado joven para votar ")
 if int(age) >= 100:
     print("Are you dead")
+
+# Datos booleanos
+game_active = True
+can_edit = False

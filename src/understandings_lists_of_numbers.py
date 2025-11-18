@@ -55,3 +55,5 @@ print(max(digits)) # Salida: 9
 # Método sum()
 digits = [1,2,3,4,5,6,7,8,9,0]
 print(sum(digits)) # Salida: 45
+
+
