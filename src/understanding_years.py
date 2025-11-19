@@ -24,3 +24,7 @@ elif age >= 18:
     print("Tu entrada vale $400")
 else:
     print("Tuviste un error")
+
+
+
+
