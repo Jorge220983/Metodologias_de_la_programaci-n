@@ -1,20 +1,3 @@
-#
-
-try:
-    age = int(input("escribe tu edad: "))
-except:
-    age = -1
-    print("Error, ingresaste un caracter no válido")
-
-# <>
-if age >= 100:
-    print("Tienes más de un siglo")
-elif age >= 18 and age < 100:
-    print("Eres mayor de edad")
-elif age >= 0 and age < 18:
-    print("Eres menor de edad")
-else:
-    print("Tuviste un error")
 
 """
     Hacer un programa que pregunte la edad de una persona 
@@ -26,9 +9,16 @@ else:
         - Si la edad es mayor o igual que 18, entonces la entrada 
           cuesta $400.
 """
-if age <= 4:
+
+try:
+    age = int(input("escribe tu edad: "))
+except:
+    age = -1
+    print("Error, ingresaste un caracter no válido")
+
+if age <= 4 and age >= 0:
     print("Entrada gratuita")
-elif age <= 18 and age > 4:
+elif age < 18 and age > 4:
     print("Tu entrada vale $200")
 elif age >= 18:
     print("Tu entrada vale $400")
