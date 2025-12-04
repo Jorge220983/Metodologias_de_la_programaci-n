@@ -15,11 +15,15 @@
     y salirme de while,
     de otro modo pedirle otro número
 """
+
+# Ejemplo básico de un while loop 
+# verifcar si un numero esta en un 
+# rango específico (10 y entre 20)
 while True:
     try:
         number = int(input("Ingresa un número: "))
 
-        if number >= 25 and number <= 50:
+        if 10 <= number <= 20:
             print("Estás en el rango, lo hiciste bien")
             break
         else:
@@ -27,3 +31,8 @@ while True:
 
     except ValueError:
         print("Se ha introducido una variable no válida.")
+    except KeyboardInterrupt:
+        print("\nPrograma terminado por el usuario.")
+        break
+
+print("Saliste del while")
